@@ -171,3 +171,31 @@ document.addEventListener('DOMContentLoaded', function () {
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
 	}
 });
+/*//===================================================== calculator*/
+// Функція для розрахунку калорій
+function calculateCalories() {
+    // Отримуємо значення з полів введення
+    const height = parseFloat(document.getElementById('height').value); // Ріст в сантиметрах
+    const weight = parseFloat(document.getElementById('weight').value); // Вага в кілограмах
+    const age = parseInt(document.getElementById('age').value); // Вік в роках
+    const gender = document.querySelector('input[name="gender"]:checked').value; // Стать
+    const activityLevel = parseFloat(document.getElementById('activity-level').value); // Рівень активності
+  
+    // Розрахунок розміру Basal Metabolic Rate (BMR)
+    let bmr = 0;
+    if (gender === 'male') {
+      bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age);
+    } else {
+      bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age);
+    }
+  
+    // Розрахунок загального рекомендованого рівня калорій з урахуванням активності
+    const totalCalories = bmr * activityLevel;
+  
+    // Виводимо результат
+    document.getElementById('result').innerHTML = `Вам потрібно споживати приблизно ${totalCalories.toFixed(2)} калорій на день.`;
+  }
+  
+  // Обробник події для кнопки розрахунку
+  document.getElementById('calculate-btn').addEventListener('click', calculateCalories);
+  
