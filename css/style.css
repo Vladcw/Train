@@ -636,3 +636,75 @@ textarea.form__input{
   background-color: #a6a6a6;
   color: #000;
 }
+/*//===================================================== calculator*/
+.title__calc {
+    text-align: center;
+}
+
+/* Стилі для форми */
+#calorie-calculator {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.div__calc {
+    margin-bottom: 10px;
+}
+.div__calc__button{
+	text-align: center;
+}
+
+/* Стилі для label */
+.label__calc {
+    display: inline-block;
+    color: #ccc;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Стилі для radio-кнопок */
+input[type="radio"] {
+    margin-right: 5px; /* Відступ radio-кнопок від тексту */
+}
+
+
+input[type="number"],
+.select__calc {
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+#calculate-btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 20px;
+    width: 40%;
+    display: flex;
+	height: 45px;
+	justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#calculate-btn:hover{
+  background-color: #a6a6a6;
+  color: #000;
+}
+
+/* Результат */
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
