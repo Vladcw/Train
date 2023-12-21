@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Этот сайт я сделал для того, что бы заработать больше денег.">
+	<meta name="keywords" content="деньги, бабки, бабосики, лаве, доллары, евро, гривни, рубли, бизнес, зароботок, бизнесмен">
+	<title>About us</title>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+	<div class="header-row">
+
+		<div class="header-logo"><img src="img/logo-footer.png" alt="Logo" style="width: 94px;height: 85px"></div>
+		<nav class="header-menu menu">
+			<div class="header-burger">
+				<span></span>
+			</div>
+			
+			<div class="menu-body">     
+				<ul class="menu-list">
+					<li><a href="index.html" class="menu-link">ГОЛОВНА</a></li>
+					<li><a href="about-us.html" class="menu-link">РОЗКЛАД</a></li>	
+					<li><a href="contact.html" class="menu-link">КОНТАКТИ</a></li>	
+					<li><a href="#popup" class="menu-link">ПІДПИСКА</a></li>				
+					<li><a class="menu-link">КОРИСНЕ</a>
+						<span class="menu-arrow arrow"></span>
+						<ul class="submenu">
+							<li><a href="people.html">ТРЕНЕРА</a></li>
+							<li><a href="work.html">РОЗТЯГНЕННЯ</a></li>
+							<li><a href="calc.html">КАЛЬКУЛЯТОР</a></li>
+							<li><a href="price.html">АБОНЕМЕНТИ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>	
+
+	</div>
+</header>
+
+<main>
+	<div class="iframe-container">
+		<iframe scrolling="no" src="rozklad.html" frameborder="0"></iframe>
+	</div>
+	
+	
+	<section id="popup" class="popup">
+        <div class="form-box">
+            <div class="form-value"><a href="#" class="popup__close">X</a>
+                <form>
+                    
+                    <h2>Підписка</h2>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="">Ім'я та прізвище</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="phone" required>
+                        <label for="">Номер телефону</label>
+                    </div>
+                    <button class="popup__button">Підписатись</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+	<div class="logo-footer">
+		<a><img class="graficlogo" src="img/logo-footer.png" alt="" style="width:94px;height:85px"></a>
+	</div>
+	<div class="social">
+		<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhkZQrRQcjxzTSTbtBstnDQvjvfBNGKLscqTJBcfjwMhRmPCNVxFzJDLNBFQZKMPDvWQZ" target="_blank"><img src="img/em.png" alt="Email"></a>
+		<a href="https://www.facebook.com/profile.php?id=100005061363315" target="_blank"><img src="img/face.png" alt="Face"></a>
+		<a href="https://www.instagram.com/artist_cw/" target="_blank"><img src="img/inst.png" alt="Inst"></a>			
+	</div>
+		<p>Made by Artist</p>
+</footer>        
+
+<script src="js/script.js"></script>
+<script src="js/jq.js"></script>
+</body>
+</html>

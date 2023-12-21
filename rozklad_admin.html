@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Розклад тренувань</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style_calc.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Розклад тренувань</h1>
+    <table id="initialTable" class="visible">
+        <tr>
+            <th></th>
+            <th>Понеділок</th>
+            <th>Вівторок</th>
+            <th>Середа</th>
+            <th>Четвер</th>
+            <th>П'ятниця</th>
+            <th>Субота</th>
+            <th>Неділя</th>
+        </tr>
+        <tr>
+            <td>09:00</td>
+            <td><input type="text" id="Понеділок-09:00"></td>
+            <td><input type="text" id="Вівторок-09:00"></td>
+            <td><input type="text" id="Середа-09:00"></td>
+            <td><input type="text" id="Четвер-09:00"></td>
+            <td><input type="text" id="П'ятниця-09:00"></td>
+            <td><input type="text" id="Субота-09:00"></td>
+            <td><input type="text" id="Неділя-09:00"></td>
+        </tr>
+
+        <tr>
+            <td>10:00</td>
+            <td><input type="text" id="Понеділок-10:00"></td>
+            <td><input type="text" id="Вівторок-10:00"></td>
+            <td><input type="text" id="Середа-10:00"></td>
+            <td><input type="text" id="Четвер-10:00"></td>
+            <td><input type="text" id="П'ятниця-10:00"></td>
+            <td><input type="text" id="Субота-10:00"></td>
+            <td><input type="text" id="Неділя-10:00"></td>
+        </tr>
+
+        <tr>
+            <td>11:00</td>
+            <td><input type="text" id="Понеділок-11:00"></td>
+            <td><input type="text" id="Вівторок-11:00"></td>
+            <td><input type="text" id="Середа-11:00"></td>
+            <td><input type="text" id="Четвер-11:00"></td>
+            <td><input type="text" id="П'ятниця-11:00"></td>
+            <td><input type="text" id="Субота-11:00"></td>
+            <td><input type="text" id="Неділя-11:00"></td>
+        </tr>
+
+        <tr>
+            <td>12:00</td>
+            <td><input type="text" id="Понеділок-12:00"></td>
+            <td><input type="text" id="Вівторок-12:00"></td>
+            <td><input type="text" id="Середа-12:00"></td>
+            <td><input type="text" id="Четвер-12:00"></td>
+            <td><input type="text" id="П'ятниця-12:00"></td>
+            <td><input type="text" id="Субота-12:00"></td>
+            <td><input type="text" id="Неділя-12:00"></td>
+        </tr>
+
+        <tr>
+            <td>13:00</td>
+            <td><input type="text" id="Понеділок-13:00"></td>
+            <td><input type="text" id="Вівторок-13:00"></td>
+            <td><input type="text" id="Середа-13:00"></td>
+            <td><input type="text" id="Четвер-13:00"></td>
+            <td><input type="text" id="П'ятниця-13:00"></td>
+            <td><input type="text" id="Субота-13:00"></td>
+            <td><input type="text" id="Неділя-13:00"></td>
+        </tr>
+
+        <tr>
+            <td>14:00</td>
+            <td><input type="text" id="Понеділок-14:00"></td>
+            <td><input type="text" id="Вівторок-14:00"></td>
+            <td><input type="text" id="Середа-14:00"></td>
+            <td><input type="text" id="Четвер-14:00"></td>
+            <td><input type="text" id="П'ятниця-14:00"></td>
+            <td><input type="text" id="Субота-14:00"></td>
+            <td><input type="text" id="Неділя-14:00"></td>
+        </tr>
+
+        <tr>
+            <td>15:00</td>
+            <td><input type="text" id="Понеділок-15:00"></td>
+            <td><input type="text" id="Вівторок-15:00"></td>
+            <td><input type="text" id="Середа-15:00"></td>
+            <td><input type="text" id="Четвер-15:00"></td>
+            <td><input type="text" id="П'ятниця-15:00"></td>
+            <td><input type="text" id="Субота-15:00"></td>
+            <td><input type="text" id="Неділя-15:00"></td>
+        </tr>
+
+        <tr>
+            <td>16:00</td>
+            <td><input type="text" id="Понеділок-16:00"></td>
+            <td><input type="text" id="Вівторок-16:00"></td>
+            <td><input type="text" id="Середа-16:00"></td>
+            <td><input type="text" id="Четвер-16:00"></td>
+            <td><input type="text" id="П'ятниця-16:00"></td>
+            <td><input type="text" id="Субота-16:00"></td>
+            <td><input type="text" id="Неділя-16:00"></td>
+        </tr>
+
+        <tr>
+            <td>17:00</td>
+            <td><input type="text" id="Понеділок-17:00"></td>
+            <td><input type="text" id="Вівторок-17:00"></td>
+            <td><input type="text" id="Середа-17:00"></td>
+            <td><input type="text" id="Четвер-17:00"></td>
+            <td><input type="text" id="П'ятниця-17:00"></td>
+            <td><input type="text" id="Субота-17:00"></td>
+            <td><input type="text" id="Неділя-17:00"></td>
+        </tr>
+
+        <tr>
+            <td>18:00</td>
+            <td><input type="text" id="Понеділок-18:00"></td>
+            <td><input type="text" id="Вівторок-18:00"></td>
+            <td><input type="text" id="Середа-18:00"></td>
+            <td><input type="text" id="Четвер-18:00"></td>
+            <td><input type="text" id="П'ятниця-18:00"></td>
+            <td><input type="text" id="Субота-18:00"></td>
+            <td><input type="text" id="Неділя-18:00"></td>
+        </tr>
+    </table>
+
+    <table id="filledTable" class="hidden"></table>
+
+    <div class="btn__all">
+        <button class="btn__gnr" id="generateButton" onclick="toggleTables()">Генерувати таблицю</button>
+        <button class="btn__rnd" name="randomFill" onclick="randomlyFillTable()">Заповнити автоматично</button>
+    </div>
+
+
+<div id="outputTable"></div>
+
+<script src="js/rozklad.js"></script>
+</body>
+</html>

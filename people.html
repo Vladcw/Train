@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наші тренера</title>
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-row">
+
+        <div class="header-logo"><img src="img/logo-footer.png" alt="Logo" style="width: 94px;height: 85px"></div>
+        <nav class="header-menu menu">
+            <div class="header-burger">
+                <span></span>
+            </div>
+            
+            <div class="menu-body">     
+				<ul class="menu-list">
+					<li><a href="index.html" class="menu-link">ГОЛОВНА</a></li>
+					<li><a href="about-us.html" class="menu-link">РОЗКЛАД</a></li>	
+					<li><a href="contact.html" class="menu-link">КОНТАКТИ</a></li>	
+                    <li><a href="#popup" class="menu-link">ПІДПИСКА</a></li>				
+					<li><a class="menu-link">КОРИСНЕ</a>
+						<span class="menu-arrow arrow"></span>
+						<ul class="submenu">
+							<li><a href="people.html">ТРЕНЕРА</a></li>
+							<li><a href="work.html">РОЗТЯГНЕННЯ</a></li>
+							<li><a href="calc.html">КАЛЬКУЛЯТОР</a></li>
+							<li><a href="price.html">АБОНЕМЕНТИ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+        </nav>	
+
+    </div>
+</header>
+
+<div class="train__container">
+    <h1 class="train__title">Наші тренера</h1>
+    <p class="train__subtitle">
+        На цій сторінці ви зможете більше дізнатись про 
+        наших тренерів, їх досягнення та досвід праці у фітнес-індустріі.
+    </p>
+</div>
+
+<div class="card__global__container">
+
+    <div class="card__container">
+
+        <div class="card__people" data-personid="1">
+            <img src="img/train/тренер_1.webp" alt="Person 1">
+            <p>Коробенко Дмитро</p>
+        </div>
+
+        <div class="card__people" data-personid="2">
+            <img src="img/train/тренер_2.jpg" alt="Person 2">
+            <p>Царенок Олександр</p>
+        </div>
+
+        <div class="card__people" data-personid="3">
+            <img src="img/train/тренер_3.jpg" alt="Person 3">
+            <p>Царенок Євгенія</p>
+        </div>
+
+    </div>
+
+    <div class="card__container">
+
+        <div class="card__people" data-personid="4">
+            <img src="img/train/тренер_4.jpg" alt="Person 1">
+            <p>Бабіч Ольга</p>
+        </div>
+
+        <div class="card__people" data-personid="5">
+            <img src="img/train/тренер_5.jpg" alt="Person 2">
+            <p>Білик Ілля</p>
+        </div>
+
+        <div class="card__people" data-personid="6">
+            <img src="img/train/тренер_6.jpg" alt="Person 3">
+            <p>Власюк Андрій</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="modal" data-modalid="1">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(1)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_1.webp" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Коробенко Дмитро</h1>
+                <p>
+                    Інструктор групових програм, тренер-партнер.   
+                </p>
+                <p>
+                    Кандидат у майстри спорту з легкої атлетики.
+                    Чемпіон України, багаторазовий призер національних 
+                    змагань з легкої атлетики.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modalid="2">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(2)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_2.jpg" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Царенок Олександр</h1>
+                <p>
+                    В фітнес-індустрії з 2007 року.
+                </p>
+                <p>
+                    Магістр по рекреації і оздоровчій фізичній культурі.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modalid="3">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(3)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_3.jpg" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Царенок Євгенія</h1>
+                <p>Спеціаліст з рекреації та фізичного виховання.</p>
+                <p>В фітнес-індустрії з 2007 року. КМС з великого тенісу.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modalid="4">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(4)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_4.jpg" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Бабіч Ольга</h1>
+                <p>В фітнес-індустрії з 2002 року.</p>
+                <p>
+                    КМС з легкої атлетики, призер України, 
+                    сертифікований спеціаліст з функціонального тренінгу 
+                    та реабілітації.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modalid="5">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(5)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_5.jpg" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Білик Ілля</h1>
+                <p>В фітнес-індустріі з 2016 р.</p>
+                <p>Призер чемпіонатів Донецької області з баскетболу.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modalid="6">
+    <div class="modal-content">
+        <span class="close" onclick="hideInfo(6)">&times;</span>
+        <div id="infoContainer">
+            <img src="img/train/тренер_6.jpg" alt="Person Info">
+            <div id="infoDetails">
+                <h1>Власюк Андрій</h1>
+                <p>В фітнес-індустріі з 2017 року.</p>
+                <p>
+                    Багаторазовий призер та переможець чемпіонату 
+                    Херсонської області з футболу та футзалу.
+                    Бронзовий призер чемпіонату Херсонської області з баскетболу.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<section id="popup" class="popup">
+    <div class="form-box">
+        <div class="form-value"><a href="#" class="popup__close">X</a>
+            <form>
+                
+                <h2>Підписка</h2>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">Ім'я та прізвище</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="phone" required>
+                    <label for="">Номер телефону</label>
+                </div>
+                <button class="popup__button">Підписатись</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="logo-footer">
+        <a><img class="graficlogo" src="img/logo-footer.png" alt="" style="width:94px;height:85px"></a>
+    </div>
+    <div class="social">
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhkZQrRQcjxzTSTbtBstnDQvjvfBNGKLscqTJBcfjwMhRmPCNVxFzJDLNBFQZKMPDvWQZ" target="_blank"><img src="img/em.png" alt="Email"></a>
+        <a href="https://www.facebook.com/profile.php?id=100005061363315" target="_blank"><img src="img/face.png" alt="Face"></a>
+        <a href="https://www.instagram.com/artist_cw/" target="_blank"><img src="img/inst.png" alt="Inst"></a>			
+    </div>
+</footer>  
+
+<script src="js/people.js"></script>
+</body>
+</html>
+
